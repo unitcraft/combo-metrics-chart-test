@@ -1,5 +1,7 @@
 # Combo Metrics Chart
 
+**English** | [Русский](README.ru.md)
+
 A combined time-series chart that renders **four sequences**, each as a different
 series type — replicating the styling and hover behaviour of the reference design:
 
@@ -11,6 +13,8 @@ series type — replicating the styling and hover behaviour of the reference des
 | `CPA`           | **column**  | blue                 |
 
 Built with **Highcharts + React + TypeScript + Vite**.
+
+![Combo Metrics Chart](docs/screenshot.png)
 
 ### What it reproduces from the reference
 
@@ -46,6 +50,9 @@ npm run build      # type-check + production build into dist/
 npm run preview    # serve the production build locally
 npm run typecheck  # type-check only
 ```
+
+> **Tip:** the chart shows four stacked Y-axis label columns on the left, so it
+> looks best at a desktop width (≈ 600 px or wider). The page is capped at 880 px.
 
 ---
 

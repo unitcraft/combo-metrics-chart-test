@@ -36,7 +36,7 @@ export const sampleData: ChartData = {
     {
       name: 'Cost',
       type: 'area',
-      color: '#e7c84a',
+      color: '#f2de73',
       axisFormat: '${value}',
       tooltipDecimals: 2,
       data: [8, 10, 9, 13, 11, 15, 19, 21, 26, 31, 39, 44.36, 51, 57],
@@ -44,7 +44,7 @@ export const sampleData: ChartData = {
     {
       name: 'CPA',
       type: 'column',
-      color: '#4f8ef7',
+      color: '#3770ff',
       axisFormat: '${value}',
       tooltipDecimals: 2,
       data: [0.9, 1.1, 1.0, 1.2, 1.3, 1.1, 1.4, 1.2, 1.5, 1.3, 1.2, 1.23, 1.4, 1.5],
@@ -52,7 +52,7 @@ export const sampleData: ChartData = {
     {
       name: 'ROI confirmed',
       type: 'spline',
-      color: '#2f9e2f',
+      color: '#118103',
       axisFormat: '{value}%',
       tooltipDecimals: 2,
       data: [171, 150, 120, 96, 80, 92, 121, 150, 141, 151, 158, 161.47, 168, 172],
@@ -60,7 +60,7 @@ export const sampleData: ChartData = {
     {
       name: 'Conversions',
       type: 'line',
-      color: '#c724c7',
+      color: '#b405f4',
       axisFormat: '{value}',
       tooltipDecimals: 0,
       data: [10, 12, 14, 16, 18, 20, 22, 25, 28, 30, 33, 36, 40, 44],

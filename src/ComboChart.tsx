@@ -10,8 +10,11 @@ interface ComboChartProps {
   height?: number;
 }
 
-/** Rose plot background from the reference. */
-const PLOT_BACKGROUND = '#f6ccd0';
+/** Rose plot background from the reference (sampled: #FDE0E4). */
+const PLOT_BACKGROUND = '#fde0e4';
+
+/** Flat cream fill of the Cost area from the reference (sampled: #FCEBBD). */
+const AREA_FILL = '#fcebbd';
 
 /** Parse an ISO 'YYYY-MM-DD' date into a UTC timestamp for the datetime axis. */
 function toTimestamp(isoDate: string): number {
@@ -67,14 +70,9 @@ export default function ComboChart({ data, height = 440 }: ComboChartProps) {
             ...base,
             type: 'area',
             lineColor: s.color,
-            lineWidth: 2,
-            fillColor: {
-              linearGradient: { x1: 0, y1: 0, x2: 0, y2: 1 },
-              stops: [
-                [0, Highcharts.color(s.color).setOpacity(0.7).get('rgba') as string],
-                [1, Highcharts.color(s.color).setOpacity(0.25).get('rgba') as string],
-              ],
-            },
+            lineWidth: 1.5,
+            // Reference uses a flat, near-opaque cream fill (no gradient).
+            fillColor: Highcharts.color(AREA_FILL).setOpacity(0.9).get('rgba') as string,
             marker: { enabled: false },
           };
         case 'spline':
