@@ -17,6 +17,10 @@
 
 ![Combo Metrics Chart](docs/screenshot.png)
 
+_Общий тултип + crosshair при наведении:_
+
+![Тултип при наведении](docs/screenshot-tooltip.png)
+
 ### Что воспроизводится из эталона
 
 - Четыре серии разных типов на одном поле (area / spline / line / column).

@@ -16,6 +16,10 @@ Built with **Highcharts + React + TypeScript + Vite**.
 
 ![Combo Metrics Chart](docs/screenshot.png)
 
+_Shared tooltip + crosshair on hover:_
+
+![Tooltip on hover](docs/screenshot-tooltip.png)
+
 ### What it reproduces from the reference
 
 - Four series of different types on one plot (area / spline / line / column).
