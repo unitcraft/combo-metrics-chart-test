@@ -76,6 +76,8 @@ export interface SeriesConfig {
   data: number[];                            // выровнено по индексу с `dates`
   axisFormat?: string;                       // напр. '${value}', '{value}%', '{value}'
   tooltipDecimals?: number;                  // по умолчанию 2
+  axisMax?: number;                          // фикс. максимум оси Y — держит серию
+                                             // «маленькой» (напр. короткие колонки)
 }
 ```
 
@@ -88,10 +90,10 @@ import type { ChartData } from './types';
 export const sampleData: ChartData = {
   dates: ['2026-06-01', '2026-06-02', '2026-06-03', '2026-06-04'],
   series: [
-    { name: 'Cost',          type: 'area',   color: '#e7c84a', axisFormat: '${value}', tooltipDecimals: 2, data: [8, 13, 26, 44.36] },
-    { name: 'CPA',           type: 'column', color: '#4f8ef7', axisFormat: '${value}', tooltipDecimals: 2, data: [0.9, 1.2, 1.5, 1.23] },
-    { name: 'ROI confirmed', type: 'spline', color: '#2f9e2f', axisFormat: '{value}%', tooltipDecimals: 2, data: [171, 96, 141, 161.47] },
-    { name: 'Conversions',   type: 'line',   color: '#c724c7', axisFormat: '{value}',  tooltipDecimals: 0, data: [10, 16, 28, 36] },
+    { name: 'Cost',          type: 'area',   color: '#f2de73', axisFormat: '${value}', tooltipDecimals: 2, data: [8, 13, 26, 44.36] },
+    { name: 'CPA',           type: 'column', color: '#3770ff', axisFormat: '${value}', tooltipDecimals: 2, axisMax: 18, data: [0.9, 1.2, 1.5, 1.23] },
+    { name: 'ROI confirmed', type: 'spline', color: '#118103', axisFormat: '{value}%', tooltipDecimals: 2, data: [171, 96, 141, 161.47] },
+    { name: 'Conversions',   type: 'line',   color: '#b405f4', axisFormat: '{value}',  tooltipDecimals: 0, data: [10, 16, 28, 36] },
   ],
 };
 ```

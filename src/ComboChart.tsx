@@ -47,6 +47,8 @@ export default function ComboChart({ data, height = 440 }: ComboChartProps) {
       gridLineColor: 'rgba(0, 0, 0, 0.06)',
       lineWidth: 0,
       min: 0,
+      // Optional fixed max keeps a series small (e.g. short column bars).
+      max: s.axisMax,
       opposite: false,
       showEmpty: false,
     }));

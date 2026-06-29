@@ -19,6 +19,12 @@ export interface SeriesConfig {
   axisFormat?: string;
   /** Decimal places used for this series' value in the tooltip. Defaults to 2. */
   tooltipDecimals?: number;
+  /**
+   * Optional fixed maximum for this series' own Y axis. Use it to keep a series
+   * visually small (e.g. short `column` bars hugging the baseline, as in the
+   * reference) instead of auto-scaling to fill its axis. Defaults to auto.
+   */
+  axisMax?: number;
 }
 
 /** Full chart input: shared date axis + exactly four sequences. */

@@ -47,6 +47,8 @@ export const sampleData: ChartData = {
       color: '#3770ff',
       axisFormat: '${value}',
       tooltipDecimals: 2,
+      // Fixed axis max keeps the bars short and hugging the baseline (reference look).
+      axisMax: 18,
       data: [0.9, 1.1, 1.0, 1.2, 1.3, 1.1, 1.4, 1.2, 1.5, 1.3, 1.2, 1.23, 1.4, 1.5],
     },
     {
